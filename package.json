@@ -1,10 +1,16 @@
 {
   "name": "react-coommon-library",
   "private": true,
-  "description": "",
+  "description": "커몬 라이브러리",
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "test":"npx lerna run test",
+    "build":"npx lerna run build",
+    "version":"npx lerna version --no-private",
+    "push":"yarn build & yarn version"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -47,8 +53,6 @@
     "sass": "^1.56.2",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
-  },
-  "scripts": {
   },
   "dependencies": {
     "postcss": "^8.4.21",

@@ -22,5 +22,11 @@
     "build": "rollup -c ../../rollup.config.js",
     "test": "jest -c ../../jest.config.js",
     "push": "npm publish"
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+  },
+  "dependencies": {
   }
 }
